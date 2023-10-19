@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body style="max-width: 1000px; border: 3px solid rgb(0, 0, 0); margin: auto; margin-top: 7%;">
+    <div>
+    <table style="border-top: 2px solid; border-left: 2px solid;
+    border-bottom: 2px solid; border-right: 2px solid; margin-left: auto; margin-right: auto; margin-top: 30px; ">
+        <tr style="text-align:left">
+            <td style="padding-right: 50px;">&emsp; Home &emsp;|</td>
+            <td style="padding-right: 50px;">&emsp; Generate Link &emsp;|</td>
+            <td style="padding-right: 50px;">&emsp; Transaction History &emsp;|</td>
+            <td style="padding-right: 50px;">&emsp; Policy &emsp;|</td>
+            <td style="padding-right: 50px;">&emsp; Logout &emsp;&emsp;</td>
+        </tr>
+    </table>
+    <style>
+        button{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: rgb(38, 121, 21);}
+    </style>
+    </div>
+    <form>
+        <div style="display: flex; padding-top: 30px;">
+        <img src="baju.jpg" border="3px" style="border-radius: 5px; flex-shrink: 0; height: 7cm; margin-left: 70px;">
+        <table style="margin-left: 2cm;">
+            <tr>
+                <td>Title Here :</td>
+                <td style="padding-left: 50px;"><input type="text" style="width: 50%" value="Baju"></td>
+            </tr>
+            <tr>
+                <td>Description :</td>
+                <td style="padding-left: 50px">
+                <textarea type="text" cols="30" rows="10">
+Year : 2023
+
+Model : korean
+
+Bahan : shakila
+
+Ukuran : s,m,l,xl,xxl,xxxl
+
+Stok : 50
+
+Di kirim dari Kota Makassar.
+
+Notes : Semua ukuran bisa berbeda 1-2cm sebagaimana diproduksi masal dan untuk warna foto bisa
+sedikit berbeda dengan fisik karena pencahayaan saat foto atau dari gadget yang di gunakan.
+
+                </textarea></td>
+            </tr>
+            <tr>
+            <td>Account Number :</td>
+            <td style="padding-left: 50px"><input type="number" style="width:50%" value="082224120547"></td>
+            </tr>
+            <tr>
+                <td>Bank :</td>
+                <td style="padding-left: 50px"><label for="Bank"></label>
+                    <select id="Bank" name="Bank">
+                      <option value="Bring"> BANK BRI</option>
+                      <option value="BNI">BANK BNI</option>
+                      <option value="MANDIRI">BANK MANDIRI</option>
+                      <option value="BCA">BANK BCA</option>
+                      <option value="DANAMON">DANAMON</option>
+                      <option value="BSI">BANK BSI</option>
+                     
+                    </select>
+                    </td>
+            </tr>
+            <tr>
+                <td>Account Holder :</td>
+                <td style="padding-left: 50px"><input type="text" style="width:50%" value="Riyanti"></td>
+            </tr>
+            <tr>
+                <td>Transaction :</td>
+                <td style="padding-left: 50px"><input type="number" min="2" max="10" style="width: 35px" value="1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-size: 10pt; padding-left: 10%;">* if the transaction is for 2 person, choose 2 from the drop down list</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-size: 14px; padding-left: 50px; color: rgb(39, 145, 18);"><input type="checkbox" checked>Send to Mobile Phone</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-size: 14px; padding-left: 50px; padding-bottom: 15px; color: rgb(50, 134, 43);"><input type="checkbox" checked>Send to Email</td>
+            </tr>
+            <tr>
+                <td>Send to Mobile Phone :</td>
+                <td style="padding-left: 50px"><input type="number" style="width: 50%" value="6285256385010"></td>
+            </tr>
+            <tr>
+                <td>Send to Email :</td>
+                <td style="padding-left: 50px"><input type="text" style="width: 50%" value="riyantiasri71@gmail.com"></td>
+            </tr>
+        </table>
+        </div>  
+        <table style="margin-left: 63%; margin-bottom: 30px; margin-top: 15px;">
+        <tr>
+                <td>
+                    <button type="button" onclick="checkout"><a href="checkout.html" style="color:rgb(255, 255, 255)">Checkout</a></button>
+                </td>
+   
+
+            </tr>
+            </table>
+    </form>
+</body>
+</html>
